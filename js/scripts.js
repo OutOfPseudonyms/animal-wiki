@@ -6,38 +6,44 @@ $(document).ready(function () {
     console.log(animalInput);
     if (animalInput === "turtle" || animalInput === "turtles") {
       $('#turtles').show();
+      $('#snakes').hide();
+      $('#insects').hide();
     } else if (animalInput === "snake" || animalInput === "snakes") {
       $('#snakes').show();
+      $('#turtles').hide();
+      $('#insects').hide();
     } else if (animalInput === "insect" || animalInput === "insects") {
       $('#insects').show();
+      $('#turtles').hide();
+      $('#snakes').hide();
     }
   })
   // function that handles a click on images
   $("#green-sea-turtle").click(function () {
-    alert("Handler for .click() called.");
+    $("#green-turtle-text").toggle();
   });
   $("#african-spurred-tortoise").click(function () {
-    alert("Handler for .click() called.");
+    $("#spurred-turtle-text").toggle();
   });
   $("#red-eared-slider-terrapin").click(function () {
-    alert("Handler for .click() called.");
+    $("#terrapin-text").toggle();
   });
   $("#corn-snake").click(function () {
-    alert("Handler for .click() called.");
+    $("#corn-text").toggle();
   });
   $("#green-tree-python").click(function () {
-    alert("Handler for .click() called.");
+    $("#python-text").toggle();
   });
   $("#golden-lancehead").click(function () {
-    alert("Handler for .click() called.");
+    $("#golden-text").toggle();
   });
   $("#fire-ants").click(function () {
-    alert("Handler for .click() called.");
+    $("#fire-text").toggle();
   });
   $("#monarch-butterfly").click(function () {
-    alert("Handler for .click() called.");
+    $("#monarch-text").toggle();
   });
   $("#honey-bee").click(function () {
-    alert("Handler for .click() called.");
+    $("#honey-text").toggle();
   });
 })

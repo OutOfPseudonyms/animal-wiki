@@ -2,6 +2,10 @@
   display: none;
 }
 
+.animal-text{
+  display: none;
+}
+
 img {
   width: 200px;
 }
